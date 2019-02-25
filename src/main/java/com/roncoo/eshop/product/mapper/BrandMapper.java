@@ -26,6 +26,6 @@ public interface BrandMapper {
 	@Select("SELECT * FROM brand WHERE id=#{id}")
 	public Brand findById(Long id);
 	
-	@Select("SELECT * FROM BRAND WHERE id in(#{ids})")
+	@Select("SELECT * FROM brand WHERE id in(#{ids})")
 	public List<Brand>findByIds(@Param("ids") String ids);
 }
